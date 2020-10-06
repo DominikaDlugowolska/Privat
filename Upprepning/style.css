@@ -1,0 +1,97 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 400px;
+    background: url(./bilder/headerImg.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+header .meny {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+header .textbox {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .textbox div {
+    width: 30%;
+    height: 40%;
+    text-align: center;
+    background-color: rgba(196, 196, 196, 0.658);
+    font: 40px black;
+    padding: 40px;
+}
+
+main{
+    width: auto;
+}
+main .box, .boxL{
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+main .boxL p{
+    text-align: right;
+    padding-right: 20px;
+    display: flex;
+    margin: auto;
+}
+main .box p {
+    display: flex;
+    margin: auto;
+    padding-left: 20px;
+}
+main .box .border {
+    border-left-style: solid;
+    border-width: 2px;
+}
+main .boxL .border{
+    border-right-style: solid;
+    border-width: 2px;
+}
+main .bottomBox{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
