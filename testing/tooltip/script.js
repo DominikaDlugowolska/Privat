@@ -1,0 +1,3 @@
+tippy('#image', {
+    content: 'Greens',
+  });
