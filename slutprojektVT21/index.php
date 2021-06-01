@@ -99,7 +99,11 @@ $userIsLoggedIn = isset($_SESSION["user"]);
                                     <input type="password" class="form-control" name="password" placeholder="Password">
                                     <label for="password">Password</label>
                                 </div>
-                                <div class="modal-footer">
+                                   
+                                <div style="display: block" class="modal-footer">
+                                    <input type="checkbox" name="gdpr">
+                                    <label for="gdpr">Jag godkänner att min information sparas.</label>
+                                    <br>
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                     <button type="submit" id="registerBtn" class="btn btn-primary">Save changes</button>
                                 </div>
