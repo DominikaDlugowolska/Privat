@@ -44,7 +44,7 @@ body
     font-size: 36px
     margin-left: 50px
 
-.menu
+.sidenavActivator
     position: fixed
     z-index: 1
     top: 10px
@@ -58,7 +58,7 @@ body
 .container
     height: auto
 
-.main-wrapper
+.container__header
     position: relative
     height: 100vh
     width: 100%
@@ -163,13 +163,13 @@ p
     display: none
 
 
-.comment-section-wrapper
+.comments
     height: auto
     width: 83vw
     margin: auto
     border-top: 4px solid #DCDCDC
 
-.comment-grid
+.comments__wrapper
     display: grid
     grid-template-columns: 1fr
     gap: 2em
@@ -181,7 +181,7 @@ p
     p
         font-size: 1.5em
 
-.comment-grid-page
+.comments__wrapper-page
     display: grid
     grid-template-columns: 1fr
     gap: 2em
@@ -203,7 +203,7 @@ p
         p
             font-size: 17px
 
-.comment-header
+.comments__title
     grid-column: 1/3
     grid-row: 1
     height: 4em
@@ -212,7 +212,7 @@ p
     background-image: url(../bilder/painting1.jpg)
 
 
-.comment-header h2
+.comments__title h2
     font-family: Montserrat
     font-weight: 400
     font-size: 30px
@@ -234,7 +234,7 @@ p
         font-weight: 400
         font-size: 25px
 
-.login-wrapper
+.login
     height: 20vh
     width: 83vw
     margin: auto
@@ -274,23 +274,23 @@ p
     p
         width: 40%
 
-.menu-icon
+.sidenavActivator__text
     display: none
 
 
 /* Responsive */
 
 @media (min-width: $layout-breakpoint-medium) 
-    .comment-grid 
+    .comments__wrapper 
         grid-template-columns: 1fr 1fr
     .homepage-grid
         grid-template-columns: 1fr 13fr 1fr
   
 
 @media (min-width: $layout-breakpoint-large)
-    .comment-grid 
+    .comments__wrapper 
         grid-template-columns: 1fr 1fr 1fr
-    .comment-grid-page
+    .comments__wrapper-page
      grid-template-columns: 1fr 1fr 1fr
      grid-template-rows: 1fr 1fr 1fr
      padding-top: 5em
@@ -298,9 +298,9 @@ p
          grid-column: 1
     
     
-    .menu
+    .sidenavActivator
      top: 330px
-    .menu-icon
+    .sidenavActivator__text
      display: block
     .sidenav
      top: 330px

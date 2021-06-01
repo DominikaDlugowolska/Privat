@@ -17,7 +17,7 @@ session_start();
 </head>
 
 <body>
-    <div id="mySidenav" class="sidenav">
+    <div id="sidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.php">Homepage</a>
         <a href="gallery-page-v2.php">Gallery</a>
@@ -27,14 +27,14 @@ session_start();
         <?php } ?>
     </div>
 
-    <span class="menu" onclick="openNav()"><p class="menu-icon">menu</p><p> &#9776;</p></span>
+    <span class="sidenavActivator" onclick="openNav()"><p class="sidenavActivator__text">sidenavActivator</p><p> &#9776;</p></span>
 
     <div class="container">
-        <div class="comment-section-wrapper">
-            <div class="comment-header">
+        <div class="comments">
+            <div class="comments__title">
                 <h2>Leave a comment</h2>
             </div>
-            <div class="comment-grid-page">
+            <div class="comments__wrapper-page">
             <?php if (isset($_SESSION['user'])) { ?>
                 <p>Welcome <?php echo $_SESSION['user']['first'] . " " . $_SESSION['user']['last']?></p>
                 
@@ -89,7 +89,7 @@ session_start();
 
     </div>
 
-    <script src="./toggle.js"></script>
+    <script src="./index.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>

@@ -68,16 +68,16 @@ document.querySelector('.toggle').addEventListener('click', showModal);
 
 
 
-// menu js
+// sidenavActivator js
 
-/* Set the width of the side navigation to 250px */
+/* Set the width of the side sidenav to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "700px";
+  document.getElementById("sidenav").style.width = "700px";
 }
 
-/* Set the width of the side navigation to 0 */
+/* Set the width of the side sidenav to 0 */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("sidenav").style.width = "0";
 }
 
 
